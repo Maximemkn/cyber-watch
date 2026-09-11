@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Réglementaire Cyber &amp; IA — juin/septembre 2026</title>
+<meta name="description" content="Veille réglementaire cybersécurité et intelligence artificielle — France et Union européenne, juin à septembre 2026.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="eyebrow">Veille réglementaire</p>
+    <h1>Veille Réglementaire Cyber &amp; IA</h1>
+    <p class="subtitle">France · Union européenne — juin à septembre 2026</p>
+
+    <div class="stats" role="list">
+      <div class="stat" role="listitem"><span class="stat-num">32</span><span class="stat-lab">actualités</span></div>
+      <div class="stat" role="listitem"><span class="stat-num">26</span><span class="stat-lab">confirmées</span></div>
+      <div class="stat" role="listitem"><span class="stat-num">47</span><span class="stat-lab">sources citées</span></div>
+      <div class="stat" role="listitem"><span class="stat-num">86</span><span class="stat-lab">mots-clés</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Sommaire">
+  <div class="wrap nav-inner">
+    <a href="#ia"><span class="nav-num">01</span> Réglementation de l&#x27;intelligence artificielle</a>
+    <a href="#cyber"><span class="nav-num">02</span> Cybersécurité : produits, réseaux et souveraineté</a>
+    <a href="#sanctions"><span class="nav-num">03</span> Sanctions, incidents et contentieux</a>
+    <a href="#doctrine"><span class="nav-num">04</span> Doctrine et outils de conformité</a>
+    <a href="#glossaire">Glossaire</a>
+    <a href="#methode">Méthode</a>
+  </div>
+</nav>
+
+<main id="contenu" class="wrap">
+
+<section class="panel" aria-labelledby="filtres-titre">
+  <div class="panel-head">
+    <h2 id="filtres-titre">Filtres</h2>
+    <div class="panel-actions">
+      <button type="button" class="btn" id="expand-all">Tout déplier</button>
+      <button type="button" class="btn" id="collapse-all">Tout replier</button>
+    </div>
+  </div>
+
+  <div class="facets">
+    <fieldset class="facet">
+      <legend>Rubrique</legend>
+      <div class="chips">
+        <label class="chip"><input type="checkbox" data-facet="section" value="ia"><span>01 — Réglementation de l&#x27;intelligence artificielle</span></label>
+        <label class="chip"><input type="checkbox" data-facet="section" value="cyber"><span>02 — Cybersécurité : produits, réseaux et souveraineté</span></label>
+        <label class="chip"><input type="checkbox" data-facet="section" value="sanctions"><span>03 — Sanctions, incidents et contentieux</span></label>
+        <label class="chip"><input type="checkbox" data-facet="section" value="doctrine"><span>04 — Doctrine et outils de conformité</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="facet">
+      <legend>Niveau de confiance</legend>
+      <div class="chips">
+        <label class="chip chip-confirme"><input type="checkbox" data-facet="conf" value="confirme"><span>Confirmé</span></label>
+        <label class="chip chip-nuance"><input type="checkbox" data-facet="conf" value="nuance"><span>Nuancé</span></label>
+        <label class="chip chip-rapporte"><input type="checkbox" data-facet="conf" value="rapporte"><span>Rapporté</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="facet facet-wide">
+      <legend>Éditeur / mot-clé</legend>
+      <div class="chips chips-scroll">
+        <label class="chip"><input type="checkbox" data-facet="tag" value="AI Act"><span>AI Act</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Anonymisation"><span>Anonymisation</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="ANSSI"><span>ANSSI</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Applications mobiles"><span>Applications mobiles</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Article 12"><span>Article 12</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Article 17"><span>Article 17</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Article 22"><span>Article 22</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Article 32"><span>Article 32</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Article 34"><span>Article 34</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Autoriteit Persoonsgegevens"><span>Autoriteit Persoonsgegevens</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Blockchain"><span>Blockchain</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CEN/CENELEC"><span>CEN/CENELEC</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CEPD"><span>CEPD</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CERT-FR"><span>CERT-FR</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Certification"><span>Certification</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CIANum"><span>CIANum</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CJUE"><span>CJUE</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Cloud souverain"><span>Cloud souverain</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CNIL"><span>CNIL</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Commande publique"><span>Commande publique</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Commission européenne"><span>Commission européenne</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Communication"><span>Communication</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Consentement"><span>Consentement</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Consultation publique"><span>Consultation publique</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Cookies"><span>Cookies</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CRA"><span>CRA</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="CVE"><span>CVE</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Cybersecurity Act"><span>Cybersecurity Act</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="DGFiP"><span>DGFiP</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="DLP"><span>DLP</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="DORA"><span>DORA</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="DPO"><span>DPO</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Droit à l&#x27;effacement"><span>Droit à l&#x27;effacement</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="DSA"><span>DSA</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Décisions automatisées"><span>Décisions automatisées</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="ENISA"><span>ENISA</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Entreprises"><span>Entreprises</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="EUVD"><span>EUVD</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Facturation électronique"><span>Facturation électronique</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Gestion de crise"><span>Gestion de crise</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Gestion des vulnérabilités"><span>Gestion des vulnérabilités</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Gouvernance"><span>Gouvernance</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Géolocalisation"><span>Géolocalisation</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Hameçonnage"><span>Hameçonnage</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Haut risque"><span>Haut risque</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="IA"><span>IA</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="IA agentique"><span>IA agentique</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="IA générative"><span>IA générative</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Interrégulation"><span>Interrégulation</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Jurisprudence"><span>Jurisprudence</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Lignes directrices"><span>Lignes directrices</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Loi résilience"><span>Loi résilience</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Marketing"><span>Marketing</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Maturité"><span>Maturité</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="MFA"><span>MFA</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="MSSP"><span>MSSP</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="NIS2"><span>NIS2</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Normalisation"><span>Normalisation</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Notification d&#x27;incident"><span>Notification d&#x27;incident</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Open source"><span>Open source</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Outils collaboratifs"><span>Outils collaboratifs</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Parlement européen"><span>Parlement européen</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Parlement français"><span>Parlement français</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Pixels de suivi"><span>Pixels de suivi</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="PME"><span>PME</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Proportionnalité"><span>Proportionnalité</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Publication de sanctions"><span>Publication de sanctions</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="REC"><span>REC</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Recrutement"><span>Recrutement</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="ReCyF"><span>ReCyF</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Ressources humaines"><span>Ressources humaines</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="RGPD"><span>RGPD</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Référentiel"><span>Référentiel</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Santé"><span>Santé</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Scraping"><span>Scraping</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="SecNumCloud"><span>SecNumCloud</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Secteur public"><span>Secteur public</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Souveraineté"><span>Souveraineté</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Surveillance"><span>Surveillance</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Transferts hors UE"><span>Transferts hors UE</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Transport"><span>Transport</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Traçabilité"><span>Traçabilité</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Uber"><span>Uber</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Violation de données"><span>Violation de données</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Éducation"><span>Éducation</span></label>
+        <label class="chip"><input type="checkbox" data-facet="tag" value="Énergie"><span>Énergie</span></label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="panel-foot">
+    <button type="button" class="btn btn-ghost" id="reset-filters">Réinitialiser les filtres</button>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+  </div>
+</section>
+
+<p class="empty" id="empty-state" hidden>Aucune actualité ne correspond à ces filtres.</p>
+
+<section class="section" id="ia" data-section="ia">
+  <header class="section-head">
+    <p class="section-num">01</p>
+    <h2>Réglementation de l&#x27;intelligence artificielle</h2>
+    <p class="section-lead">Calendrier de l&#x27;AI Act bouleversé par le Digital Omnibus, et montée en puissance de la doctrine des autorités de protection des données sur l&#x27;IA.</p>
+    <p class="section-count" data-section-count></p>
+  </header>
+  <div class="subsection" id="ia-calendrier" data-sub="ia-calendrier">
+    <h3 class="sub-title">Calendrier et champ d&#x27;application de l&#x27;AI Act <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="ia-omnibus" data-conf="confirme" data-section="ia" data-tags="AI Act|Commission européenne|Parlement européen|Haut risque">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="ia-omnibus-body">
+          <span class="card-headline">
+            <span class="card-title">Le Digital Omnibus repousse les obligations « haut risque » de l&#x27;AI Act</span>
+            <span class="card-hook">Le Parlement européen a validé le 16 juin 2026 le report des règles applicables aux systèmes d&#x27;IA à haut risque : décembre 2027 pour les systèmes autonomes, août 2028 pour ceux intégrés à des produits.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">16 juin 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="ia-omnibus-body" hidden>
+          <p>Proposé par la Commission le 19 novembre 2025, le « Digital Omnibus on AI » vise à simplifier la mise en œuvre du règlement (UE) 2024/1689. Le Conseil a arrêté sa position le 13 mars 2026, l&#x27;accord en trilogue a été trouvé le 7 mai 2026 et approuvé par le Coreper le 13 mai, puis par les commissions parlementaires le 2 juin.</p>
+          <p>Le vote en plénière du Parlement européen, le 16 juin 2026, a acté le texte par 423 voix pour, 57 contre et 174 abstentions.</p>
+          <p>Conséquence pratique : l&#x27;échéance du 2 août 2026, qui devait déclencher les obligations des systèmes à haut risque de l&#x27;annexe III (biométrie, infrastructures critiques, éducation, emploi, contrôle aux frontières), est décalée au 2 décembre 2027. Les systèmes d&#x27;IA intégrés dans des produits réglementés (robotique, machines industrielles) basculent au 2 août 2028. Le marquage des contenus générés par IA est lui reporté au 2 décembre 2026.</p>
+          <p>Le texte ajoute par ailleurs une interdiction des contenus intimes non consentis générés par IA, étend les allègements prévus pour les PME et mid-caps, et renforce les pouvoirs du Bureau européen de l&#x27;IA.</p>
+          <p>À retenir : le report n&#x27;est pas une annulation. Les obligations relatives aux pratiques interdites et à la maîtrise de l&#x27;IA (février 2025) ainsi que celles applicables aux modèles d&#x27;IA à usage général (août 2025) restent, elles, pleinement en vigueur.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="AI Act">AI Act</button></li>
+            <li><button type="button" class="tag" data-tag="Commission européenne">Commission européenne</button></li>
+            <li><button type="button" class="tag" data-tag="Parlement européen">Parlement européen</button></li>
+            <li><button type="button" class="tag" data-tag="Haut risque">Haut risque</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.europarl.europa.eu/legislative-train/package-digital-package/file-digital-omnibus-on-ai" target="_blank" rel="noopener noreferrer">Parlement européen — Legislative Train Schedule, « Digital Omnibus on AI »</a> <span class="src-date">— consulté le 11 septembre 2026</span></li>
+              <li><a href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/" target="_blank" rel="noopener noreferrer">Gibson Dunn — « EU AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key Changes »</a> <span class="src-date">— 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="ia-lignes-hr" data-conf="nuance" data-section="ia" data-tags="AI Act|Commission européenne|Haut risque|Lignes directrices">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="ia-lignes-hr-body">
+          <span class="card-headline">
+            <span class="card-title">Lignes directrices de la Commission sur la qualification « haut risque »</span>
+            <span class="card-hook">La Commission a soumis à consultation ciblée, jusqu&#x27;au 23 juillet 2026, un projet de lignes directrices aidant fournisseurs et déployeurs à déterminer si leur système d&#x27;IA relève du régime haut risque.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">juillet 2026</span>
+            <span class="badge badge-nuance">Nuancé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="ia-lignes-hr-body" hidden>
+          <p>Le projet de lignes directrices précise, exemples d&#x27;usages à l&#x27;appui, la méthode de classification des systèmes d&#x27;IA à haut risque au sens des articles 6 et 7 et de l&#x27;annexe III de l&#x27;AI Act.</p>
+          <p>La consultation ciblée des parties prenantes est restée ouverte jusqu&#x27;au 23 juillet 2026 ; les retours doivent être intégrés avant l&#x27;adoption formelle par la Commission.</p>
+          <p>Point de vigilance : ces lignes directrices ne sont pas juridiquement contraignantes. Elles reflètent l&#x27;interprétation de la Commission et serviront de référence pour le contrôle, mais ne préjugent pas de l&#x27;appréciation du juge.</p>
+          <p>Nuance sur la datation : la page de la Commission ne mentionne pas de date d&#x27;adoption définitive à ce jour. Le calendrier d&#x27;application repris dans le document intègre déjà les nouvelles échéances issues de l&#x27;accord Omnibus (2 décembre 2027 et 2 août 2028).</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="AI Act">AI Act</button></li>
+            <li><button type="button" class="tag" data-tag="Commission européenne">Commission européenne</button></li>
+            <li><button type="button" class="tag" data-tag="Haut risque">Haut risque</button></li>
+            <li><button type="button" class="tag" data-tag="Lignes directrices">Lignes directrices</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems" target="_blank" rel="noopener noreferrer">Commission européenne — « Guidelines on the classification of high-risk AI systems »</a> <span class="src-date">— consulté le 11 septembre 2026</span></li>
+              <li><a href="https://www.mayerbrown.com/en/insights/publications/2026/07/eu-ai-act-news-digital-omnibus-on-ai-new-guidance-on-risk-classification-gpai-and-transparency-obligations" target="_blank" rel="noopener noreferrer">Mayer Brown — « EU AI Act News: Digital Omnibus on AI, New Guidance on Risk Classification, GPAI, and Transparency Obligations »</a> <span class="src-date">— juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="subsection" id="ia-doctrine" data-sub="ia-doctrine">
+    <h3 class="sub-title">Doctrine des régulateurs de données sur l&#x27;IA <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="ia-scraping" data-conf="confirme" data-section="ia" data-tags="CEPD|CNIL|RGPD|IA générative|Scraping">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="ia-scraping-body">
+          <span class="card-headline">
+            <span class="card-title">Le CEPD encadre le moissonnage de données pour l&#x27;IA générative</span>
+            <span class="card-hook">Le 7 juillet 2026, le Comité européen de la protection des données a adopté des lignes directrices sur le web scraping utilisé pour entraîner les modèles d&#x27;IA générative.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">7 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="ia-scraping-body" hidden>
+          <p>Le CEPD précise les conditions de licéité de l&#x27;extraction automatisée et à grande échelle de données en ligne aux fins d&#x27;entraînement de modèles d&#x27;IA générative.</p>
+          <p>Les exigences mises en avant : attention particulière aux principes de limitation des finalités et de transparence, validation et horodatage des données avant l&#x27;entraînement, respect de la minimisation.</p>
+          <p>Le Comité rappelle que le traitement de catégories particulières de données (article 9 du RGPD) est en principe interdit : le responsable de traitement doit réunir à la fois une base légale au titre de l&#x27;article 6 et une exception au titre de l&#x27;article 9.</p>
+          <p>Ces lignes directrices ont été mises en consultation publique jusqu&#x27;au 30 octobre 2026. La CNIL en a relayé la publication le 9 juillet 2026.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CEPD">CEPD</button></li>
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="IA générative">IA générative</button></li>
+            <li><button type="button" class="tag" data-tag="Scraping">Scraping</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs" target="_blank" rel="noopener noreferrer">CNIL — « Le CEPD met en lumière l&#x27;anonymisation et le moissonnage pour l&#x27;IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs »</a> <span class="src-date">— 9 juillet 2026</span></li>
+              <li><a href="https://www.edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en" target="_blank" rel="noopener noreferrer">EDPB — Documents et lignes directrices</a> <span class="src-date">— consulté le 11 septembre 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="ia-agentique" data-conf="confirme" data-section="ia" data-tags="CNIL|CIANum|RGPD|IA agentique">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="ia-agentique-body">
+          <span class="card-headline">
+            <span class="card-title">CNIL et CIANum publient une note exploratoire sur l&#x27;IA agentique</span>
+            <span class="card-hook">Le 20 juillet 2026, la CNIL et le Conseil de l&#x27;IA et du Numérique alertent sur les risques que les agents IA autonomes font peser sur les données personnelles des utilisateurs.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">20 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="ia-agentique-body" hidden>
+          <p>La note exploratoire « IA agentique et protection des données personnelles : équation à inconnues multiples pour les utilisateurs » est publiée conjointement par la CNIL et le Conseil de l&#x27;IA et du Numérique (CIANum).</p>
+          <p>Elle porte sur les systèmes d&#x27;IA capables d&#x27;agir de façon autonome pour le compte d&#x27;un utilisateur : accès à des comptes et services tiers, exécution d&#x27;actions, chaînage d&#x27;outils.</p>
+          <p>Les points d&#x27;attention identifiés concernent notamment la difficulté à établir un consentement éclairé sur des chaînes d&#x27;action opaques, la délimitation des rôles responsable de traitement / sous-traitant, et le périmètre effectif des données auxquelles l&#x27;agent accède.</p>
+          <p>Intérêt opérationnel : ce document est aujourd&#x27;hui l&#x27;un des rares repères publics français pour cadrer un déploiement d&#x27;agents IA en entreprise sous l&#x27;angle RGPD.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="CIANum">CIANum</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="IA agentique">IA agentique</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/ia-agentique-cnil-cianum-note" target="_blank" rel="noopener noreferrer">CNIL — « IA agentique et données personnelles : la CNIL et le Conseil de l&#x27;IA et du Numérique publient une note exploratoire »</a> <span class="src-date">— 20 juillet 2026</span></li>
+              <li><a href="https://www.cnil.fr/sites/default/files/2026-07/ia-cianum-cnil.pdf" target="_blank" rel="noopener noreferrer">CNIL — Note « IA agentique et protection des données personnelles » (PDF)</a> <span class="src-date">— juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="ia-genmod" data-conf="confirme" data-section="ia" data-tags="CNIL|IA|Open source|Traçabilité">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="ia-genmod-body">
+          <span class="card-headline">
+            <span class="card-title">La CNIL met à jour son outil de traçabilité des modèles d&#x27;IA open source</span>
+            <span class="card-hook">Le 26 août 2026, la CNIL a actualisé son outil de cartographie de la généalogie des modèles d&#x27;IA publiés en source ouverte.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">26 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="ia-genmod-body" hidden>
+          <p>L&#x27;outil documente les filiations entre modèles d&#x27;IA open source : modèle de base, versions dérivées, jeux de données et étapes de fine-tuning.</p>
+          <p>Enjeu de conformité : lorsqu&#x27;un modèle est réutilisé ou affiné, la chaîne de provenance conditionne l&#x27;analyse des bases légales et la traçabilité des données d&#x27;entraînement, en particulier dans les secteurs régulés.</p>
+          <p>L&#x27;annonce s&#x27;inscrit dans la série de travaux de la CNIL sur l&#x27;IA entamée depuis 2023 (recommandations sur le développement de systèmes d&#x27;IA, fiches pratiques).</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="IA">IA</button></li>
+            <li><button type="button" class="tag" data-tag="Open source">Open source</button></li>
+            <li><button type="button" class="tag" data-tag="Traçabilité">Traçabilité</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/ia-la-cnil-met-jour-son-outil-de-tracabilite-des-modeles-publies-en-source-ouverte" target="_blank" rel="noopener noreferrer">CNIL — « IA : la CNIL met à jour son outil de traçabilité des modèles publiés en source ouverte »</a> <span class="src-date">— 26 août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="ia-enisa-podcast" data-conf="confirme" data-section="ia" data-tags="ENISA|IA|Communication">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="ia-enisa-podcast-body">
+          <span class="card-headline">
+            <span class="card-title">L&#x27;ENISA lance une série de podcasts consacrée à l&#x27;IA de frontière</span>
+            <span class="card-hook">Le 14 juillet 2026, l&#x27;agence européenne de cybersécurité a lancé « ENISA on Air », dont le premier épisode porte sur la Frontier AI.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">14 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="ia-enisa-podcast-body" hidden>
+          <p>L&#x27;ENISA ouvre un format de vulgarisation destiné à expliquer les évolutions de la cybersécurité européenne à un public élargi.</p>
+          <p>Le choix de la Frontier AI comme premier sujet traduit l&#x27;intégration croissante des risques liés aux modèles d&#x27;IA les plus avancés dans le mandat de l&#x27;agence, en articulation avec les travaux du Bureau européen de l&#x27;IA.</p>
+          <p>Portée limitée : il s&#x27;agit d&#x27;une initiative de communication, sans effet normatif direct.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="IA">IA</button></li>
+            <li><button type="button" class="tag" data-tag="Communication">Communication</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.enisa.europa.eu/news/enisa-on-air-our-first-podcast-launches-on-frontier-ai" target="_blank" rel="noopener noreferrer">ENISA — « ENISA on Air: Our first podcast launches on Frontier AI »</a> <span class="src-date">— 14 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cyber" data-section="cyber">
+  <header class="section-head">
+    <p class="section-num">02</p>
+    <h2>Cybersécurité : produits, réseaux et souveraineté</h2>
+    <p class="section-lead">Entrée en application des obligations de signalement du Cyber Resilience Act, transposition NIS2 toujours en attente en France, et durcissement des exigences cloud de l&#x27;État.</p>
+    <p class="section-count" data-section-count></p>
+  </header>
+  <div class="subsection" id="cyber-cra" data-sub="cyber-cra">
+    <h3 class="sub-title">Cyber Resilience Act <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="cra-signalement" data-conf="confirme" data-section="cyber" data-tags="CRA|ENISA|ANSSI|CERT-FR|Notification d&#x27;incident">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="cra-signalement-body">
+          <span class="card-headline">
+            <span class="card-title">CRA : les obligations de signalement s&#x27;appliquent depuis le 11 septembre 2026</span>
+            <span class="card-hook">Depuis aujourd&#x27;hui, tout fabricant d&#x27;un produit comportant un élément numérique doit notifier à l&#x27;ENISA les vulnérabilités activement exploitées et les incidents graves, sous 24 heures.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">11 septembre 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="cra-signalement-body" hidden>
+          <p>L&#x27;article 14 du règlement (UE) 2024/2847 (Cyber Resilience Act) impose deux catégories de notifications : les vulnérabilités activement exploitées affectant le produit, et les incidents graves ayant une incidence sur sa sécurité.</p>
+          <p>Le calendrier de notification est en trois temps : alerte précoce sous 24 heures après la prise de connaissance, rapport complet sous 72 heures, rapport final sous 14 jours.</p>
+          <p>Le point d&#x27;entrée est l&#x27;ENISA, qui joue le rôle de plateforme centrale et retransmet aux CSIRT nationaux — en France le CERT-FR, coordonné par l&#x27;ANSSI.</p>
+          <p>Champ d&#x27;application très large : l&#x27;obligation vise toute structure mettant sur le marché européen un produit intégrant au moins un composant numérique, y compris pour des produits déjà commercialisés.</p>
+          <p>Point pratique relevé par la presse spécialisée : la création de compte sur le portail ENISA n&#x27;ouvrait qu&#x27;au 11 septembre, alors même que le délai de 24 heures court dès cette date. Les autres obligations du CRA (exigences essentielles, marquage CE) s&#x27;appliqueront, elles, à compter du 11 décembre 2027.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CRA">CRA</button></li>
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="ANSSI">ANSSI</button></li>
+            <li><button type="button" class="tag" data-tag="CERT-FR">CERT-FR</button></li>
+            <li><button type="button" class="tag" data-tag="Notification d&#x27;incident">Notification d&#x27;incident</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://next.ink/255197/cyber-resilience-act-les-obligations-de-signalement-entrent-en-vigueur-le-11-septembre/" target="_blank" rel="noopener noreferrer">Next — « Cyber Resilience Act : les obligations de signalement entrent en vigueur le 11 septembre »</a> <span class="src-date">— 8 septembre 2026</span></li>
+              <li><a href="https://www.entreprises.gouv.fr/decryptages-de-nos-experts/cyber-resilience-act-cra-ce-qui-change-pour-les-entreprises-et-comment" target="_blank" rel="noopener noreferrer">Direction générale des Entreprises — « Cyber Resilience Act (CRA) : ce qui change pour les entreprises et comment s&#x27;y préparer »</a> <span class="src-date">— consulté le 11 septembre 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="cra-anssi" data-conf="nuance" data-section="cyber" data-tags="CRA|ANSSI|Normalisation|CEN/CENELEC">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="cra-anssi-body">
+          <span class="card-headline">
+            <span class="card-title">L&#x27;ANSSI appelle à ne pas attendre les normes harmonisées</span>
+            <span class="card-hook">L&#x27;agence rappelle que la conformité au CRA s&#x27;impose indépendamment de la publication des normes harmonisées européennes, encore incomplètes.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">2026</span>
+            <span class="badge badge-nuance">Nuancé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="cra-anssi-body" hidden>
+          <p>Les normes harmonisées adossées au CRA, qui donneront présomption de conformité aux exigences essentielles de l&#x27;annexe I, sont encore en cours d&#x27;élaboration au CEN/CENELEC.</p>
+          <p>La position relayée par l&#x27;ANSSI est que l&#x27;absence de norme publiée ne suspend pas l&#x27;obligation : le fabricant doit démontrer la conformité par ses propres moyens, documentation technique à l&#x27;appui.</p>
+          <p>Nuance : cette prise de position est rapportée par la presse professionnelle et ne correspond pas, à notre connaissance, à une publication doctrinale datée de l&#x27;ANSSI sur la période. Elle est donc à relativiser dans sa formulation, non dans son fond.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CRA">CRA</button></li>
+            <li><button type="button" class="tag" data-tag="ANSSI">ANSSI</button></li>
+            <li><button type="button" class="tag" data-tag="Normalisation">Normalisation</button></li>
+            <li><button type="button" class="tag" data-tag="CEN/CENELEC">CEN/CENELEC</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://itsocial.fr/cybersecurite/cybersecurite-actualites/cyber-resilience-act-lanssi-rappelle-que-la-conformite-simpose-sans-attendre-les-normes/" target="_blank" rel="noopener noreferrer">IT Social — « Cyber Resilience Act, l&#x27;ANSSI rappelle que la conformité s&#x27;impose sans attendre les normes »</a> <span class="src-date">— 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="cra-pme" data-conf="confirme" data-section="cyber" data-tags="CRA|ENISA|PME|Maturité">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="cra-pme-body">
+          <span class="card-headline">
+            <span class="card-title">L&#x27;ENISA mesure le retard des PME face au CRA</span>
+            <span class="card-hook">Enquête publiée le 13 juillet 2026 : 66 % des PME interrogées connaissent le CRA, mais comprennent mal ses exigences pratiques. L&#x27;agence publie un modèle d&#x27;auto-évaluation de maturité.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">13 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="cra-pme-body" hidden>
+          <p>L&#x27;enquête a été menée en février-mars 2026 auprès de 194 organisations dans 31 pays.</p>
+          <p>Résultats clés : 66 % des répondants avaient entendu parler du CRA sans en maîtriser les exigences opérationnelles ; 142 organisations ont exprimé un besoin de soutien financier ; plus de 70 % réclament des modèles de documentation technique et de développement sécurisé.</p>
+          <p>L&#x27;écart de maturité entre entreprises de taille moyenne et microentreprises est d&#x27;environ 1 point sur l&#x27;échelle utilisée.</p>
+          <p>Livrable : le « SME Cyber Resilience Maturity Assessment Model », structuré en cinq domaines (gouvernance, gestion des risques, gestion des vulnérabilités, cycle de vie produit, compétences) et trois profils de maturité (élémentaire, intermédiaire, avancé), accompagné d&#x27;un fichier d&#x27;auto-évaluation téléchargeable.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CRA">CRA</button></li>
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="PME">PME</button></li>
+            <li><button type="button" class="tag" data-tag="Maturité">Maturité</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.enisa.europa.eu/news/where-do-smes-stand-in-preparing-for-the-cyber-resilience-act" target="_blank" rel="noopener noreferrer">ENISA — « Where do SMEs stand in preparing for the Cyber Resilience Act? »</a> <span class="src-date">— 13 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="subsection" id="cyber-nis2" data-sub="cyber-nis2">
+    <h3 class="sub-title">NIS2 et transposition française <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="nis2-loi" data-conf="nuance" data-section="cyber" data-tags="NIS2|DORA|REC|ANSSI|Loi résilience|Parlement français">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="nis2-loi-body">
+          <span class="card-headline">
+            <span class="card-title">Loi résilience : l&#x27;examen en séance publique repoussé à septembre 2026</span>
+            <span class="card-hook">Le projet de loi transposant NIS2, la directive REC et adaptant le droit français à DORA n&#x27;a pas été inscrit à la session extraordinaire de juillet 2026. La promulgation est désormais estimée à fin 2026.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">juillet 2026</span>
+            <span class="badge badge-nuance">Nuancé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="nis2-loi-body" hidden>
+          <p>Chronologie du texte : présentation en Conseil des ministres le 15 octobre 2024, adoption par le Sénat le 12 mars 2025, fin de l&#x27;examen en commission spéciale de l&#x27;Assemblée nationale en septembre 2025.</p>
+          <p>Le texte n&#x27;a pas figuré à l&#x27;ordre du jour de la session extraordinaire de juillet 2026, repoussant l&#x27;examen en séance publique à septembre 2026. La promulgation et les premiers décrets d&#x27;application sont estimés à fin 2026.</p>
+          <p>L&#x27;un des points de blocage identifiés porte sur les dispositions relatives au chiffrement des messageries.</p>
+          <p>Conséquence pour les entités concernées : NIS2 n&#x27;entrera en vigueur en France qu&#x27;une fois l&#x27;ensemble des textes (loi, décrets, arrêtés) publiés. L&#x27;ANSSI a évoqué un délai de mise en conformité d&#x27;environ trois ans après publication des exigences techniques, avec une phase d&#x27;accompagnement avant les premières sanctions.</p>
+          <p>Nuance sur les dates : les étapes parlementaires passées sont documentées, mais le calendrier de promulgation reste une estimation de la presse spécialisée, non un engagement gouvernemental.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="NIS2">NIS2</button></li>
+            <li><button type="button" class="tag" data-tag="DORA">DORA</button></li>
+            <li><button type="button" class="tag" data-tag="REC">REC</button></li>
+            <li><button type="button" class="tag" data-tag="ANSSI">ANSSI</button></li>
+            <li><button type="button" class="tag" data-tag="Loi résilience">Loi résilience</button></li>
+            <li><button type="button" class="tag" data-tag="Parlement français">Parlement français</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://deefense.fr/cyber-et-it/transposition-nis2-france-calendrier" target="_blank" rel="noopener noreferrer">Deefense — « Transposition NIS2 en France : le calendrier 2026 »</a> <span class="src-date">— 28 juillet 2026</span></li>
+              <li><a href="https://aide.monespacenis2.cyber.gouv.fr/fr/article/avancement-de-la-transposition-de-la-directive-nis-2-1b3j1da/" target="_blank" rel="noopener noreferrer">ANSSI / Mon Espace NIS2 — « Avancement de la transposition de la directive NIS 2 »</a> <span class="src-date">— consulté le 11 septembre 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="nis2-recyf" data-conf="nuance" data-section="cyber" data-tags="NIS2|ANSSI|ReCyF|Référentiel">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="nis2-recyf-body">
+          <span class="card-headline">
+            <span class="card-title">ReCyF : l&#x27;ANSSI donne le référentiel avant la loi</span>
+            <span class="card-hook">Face au retard législatif, l&#x27;ANSSI a diffusé le Référentiel Cyber France et son comparateur, pour permettre aux entités de se préparer sans attendre la promulgation.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">mars 2026</span>
+            <span class="badge badge-nuance">Nuancé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="nis2-recyf-body" hidden>
+          <p>Le ReCyF décline les mesures recommandées par l&#x27;ANSSI pour atteindre les objectifs de sécurité fixés par NIS2 : inventaire et gestion du SI, gouvernance des identités numériques, audits et tests de sécurité, préparation et exercices de gestion de crise.</p>
+          <p>Un comparateur, accessible sur MesServicesCyber, permet de filtrer les exigences par thématique, par catégorie d&#x27;entité (entité essentielle ou entité importante) et de les mettre en correspondance avec les normes ISO 2700x et les annexes réglementaires.</p>
+          <p>Le directeur général de l&#x27;ANSSI, Vincent Strubel, a résumé la position de l&#x27;agence auprès des acteurs publics : « le plus tôt sera le mieux ».</p>
+          <p>Nuance sur la datation : la date de publication du référentiel diffère selon les sources (17 mars 2025 sur le site du Lab ANSSI, 17 mars 2026 selon la presse spécialisée). Le fond — un référentiel disponible et utilisable dès maintenant — n&#x27;est pas en discussion.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="NIS2">NIS2</button></li>
+            <li><button type="button" class="tag" data-tag="ANSSI">ANSSI</button></li>
+            <li><button type="button" class="tag" data-tag="ReCyF">ReCyF</button></li>
+            <li><button type="button" class="tag" data-tag="Référentiel">Référentiel</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://lab.cyber.gouv.fr/les-actualit%C3%A9s-du-lab-anssi/recyf--publication-du-r%C3%A9f%C3%A9rentiel-dexigences-et-du-comparateur/" target="_blank" rel="noopener noreferrer">Lab ANSSI — « ReCyF : publication du référentiel d&#x27;exigences et du comparateur accessibles sur MesServicesCyber »</a> <span class="src-date">— mars 2026</span></li>
+              <li><a href="https://acteurspublics.fr/articles/lanssi-exhorte-les-acteurs-publics-a-se-conformer-aux-futures-exigences-en-matiere-de-cybersecurite/" target="_blank" rel="noopener noreferrer">Acteurs Publics — « Avec le retard pris par la loi cybersécurité, l&#x27;Anssi donne des clés aux administrations pour se conformer sans attendre »</a> <span class="src-date">— 18 mars 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="subsection" id="cyber-souverainete" data-sub="cyber-souverainete">
+    <h3 class="sub-title">Souveraineté, certification et capacités européennes <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="secnumcloud" data-conf="confirme" data-section="cyber" data-tags="SecNumCloud|ANSSI|Cloud souverain|Commande publique|Santé">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="secnumcloud-body">
+          <span class="card-headline">
+            <span class="card-title">SecNumCloud 3.2 rendu obligatoire pour les données les plus sensibles de l&#x27;État</span>
+            <span class="card-hook">Un texte réglementaire du 12 août 2026 impose la qualification SecNumCloud 3.2 — ou une certification européenne équivalente — pour l&#x27;hébergement des données d&#x27;une sensibilité particulière.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">12 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="secnumcloud-body" hidden>
+          <p>Le référentiel SecNumCloud 3.2 de l&#x27;ANSSI reçoit une consécration réglementaire : les entités étatiques traitant des données « d&#x27;une sensibilité particulière » doivent recourir à un prestataire qualifié par l&#x27;ANSSI ou détenteur d&#x27;une certification européenne équivalente.</p>
+          <p>SecNumCloud combine des exigences techniques et des critères d&#x27;immunité aux législations extraterritoriales (capital, gouvernance, localisation), ce qui restreint de fait le marché aux acteurs européens qualifiés.</p>
+          <p>Impact sectoriel signalé : les organismes de santé manipulant des données de santé sensibles sont particulièrement concernés.</p>
+          <p>Effet de marché attendu : la mesure agit comme une règle d&#x27;achat public, davantage que comme une obligation générale pesant sur les entreprises privées.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="SecNumCloud">SecNumCloud</button></li>
+            <li><button type="button" class="tag" data-tag="ANSSI">ANSSI</button></li>
+            <li><button type="button" class="tag" data-tag="Cloud souverain">Cloud souverain</button></li>
+            <li><button type="button" class="tag" data-tag="Commande publique">Commande publique</button></li>
+            <li><button type="button" class="tag" data-tag="Santé">Santé</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.vigier-avocats.com/donnees-personnelles-les-principales-actualites-de-lete-2026/" target="_blank" rel="noopener noreferrer">Vigier Avocats — « Données personnelles : les principales actualités de l&#x27;été 2026 »</a> <span class="src-date">— été 2026</span></li>
+              <li><a href="https://www.silicon.fr/cloud-1370/secnumcloud-3-2-paris-impose-le-cloud-souverain-par-la-voie-reglementaire-228968" target="_blank" rel="noopener noreferrer">Silicon — « SecNumCloud 3.2 : Paris impose le cloud souverain par la voie réglementaire »</a> <span class="src-date">— août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="csa2" data-conf="nuance" data-section="cyber" data-tags="Cybersecurity Act|ENISA|Certification|Souveraineté|Commission européenne">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="csa2-body">
+          <span class="card-headline">
+            <span class="card-title">Cybersecurity Act 2 : la révision du mandat de l&#x27;ENISA inquiète Paris</span>
+            <span class="card-hook">La proposition de révision du Cybersecurity Act, présentée par la Commission en janvier 2026, renforce sensiblement l&#x27;ENISA — au point de susciter des réserves françaises.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">mai 2026</span>
+            <span class="badge badge-nuance">Nuancé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="csa2-body" hidden>
+          <p>La proposition de règlement révisant le Cybersecurity Act (règlement (UE) 2019/881) vise à élargir le mandat de l&#x27;ENISA et à réorganiser le cadre européen de certification de cybersécurité.</p>
+          <p>Le Conseil national du numérique et de la sécurité (CSNP) a rendu un avis n° 2026-06 le 6 mai 2026 sur ce texte, relayant des interrogations sur l&#x27;équilibre entre compétences nationales et compétences de l&#x27;agence européenne.</p>
+          <p>Les réserves rapportées portent notamment sur le risque d&#x27;affaiblissement des schémas nationaux de qualification (dont SecNumCloud) au profit d&#x27;un schéma européen moins exigeant sur les critères de souveraineté.</p>
+          <p>Nuance : le texte est au stade de la procédure législative ordinaire. Aucune adoption définitive n&#x27;est intervenue sur la période couverte, et les positions nationales relèvent en partie de prises de position d&#x27;organismes consultatifs.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="Cybersecurity Act">Cybersecurity Act</button></li>
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="Certification">Certification</button></li>
+            <li><button type="button" class="tag" data-tag="Souveraineté">Souveraineté</button></li>
+            <li><button type="button" class="tag" data-tag="Commission européenne">Commission européenne</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-eu-cybersecurity-act" target="_blank" rel="noopener noreferrer">Commission européenne — « Proposal for a Regulation on the EU Cybersecurity Act »</a> <span class="src-date">— janvier 2026</span></li>
+              <li><a href="https://csnp.fr/wp-content/uploads/2026/05/Avis-n%C2%B02026-06-du-6-mai-2026-sur-le-Cybersecurity-Act-2.pdf" target="_blank" rel="noopener noreferrer">CSNP — Avis n° 2026-06 du 6 mai 2026 sur le Cybersecurity Act 2 (PDF)</a> <span class="src-date">— 6 mai 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="eumss" data-conf="confirme" data-section="cyber" data-tags="ENISA|Certification|MSSP|Consultation publique">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="eumss-body">
+          <span class="card-headline">
+            <span class="card-title">Certification des services de sécurité managés : consultation ENISA jusqu&#x27;au 13 septembre</span>
+            <span class="card-hook">L&#x27;ENISA a soumis à consultation publique, le 24 juillet 2026, un projet de schéma européen de certification des Managed Security Services (EUMSS).</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">24 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="eumss-body" hidden>
+          <p>Le schéma répond à la fragmentation des exigences nationales applicables aux prestataires de services de sécurité managés.</p>
+          <p>Architecture retenue : une couche horizontale d&#x27;exigences communes (conception sécurisée, déploiement, disponibilité, exploitation, amélioration continue) et une couche verticale d&#x27;exigences spécifiques par service — la version soumise à consultation couvre la réponse à incident.</p>
+          <p>Trois niveaux d&#x27;assurance sont prévus : élémentaire, substantiel et élevé.</p>
+          <p>Articulation avec la Réserve de cybersécurité de l&#x27;UE : les prestataires devront obtenir la certification EUMSS dans les deux ans suivant sa mise en œuvre. Le directeur exécutif de l&#x27;ENISA, Juhan Lepassaar, souligne que « des socles communs peuvent garantir un niveau de confiance dans les services proposés ».</p>
+          <p>La consultation était ouverte jusqu&#x27;au 13 septembre 2026 via le portail EU Survey.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="Certification">Certification</button></li>
+            <li><button type="button" class="tag" data-tag="MSSP">MSSP</button></li>
+            <li><button type="button" class="tag" data-tag="Consultation publique">Consultation publique</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services" target="_blank" rel="noopener noreferrer">ENISA — « Have your say on the certification of EU Managed Security Services »</a> <span class="src-date">— 24 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="cyber-europe" data-conf="confirme" data-section="cyber" data-tags="ENISA|Gestion de crise|Énergie|Transport|NIS2">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="cyber-europe-body">
+          <span class="card-headline">
+            <span class="card-title">Cyber Europe 2026 : exercice européen centré sur le rail et l&#x27;énergie</span>
+            <span class="card-hook">L&#x27;ENISA a clôturé le 11 juin 2026 l&#x27;édition 2026 de son exercice paneuropéen de gestion de crise cyber.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">11 juin 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="cyber-europe-body" hidden>
+          <p>Cyber Europe est l&#x27;exercice biennal organisé par l&#x27;ENISA pour tester la réponse collective de l&#x27;Union face à une crise cyber de grande ampleur.</p>
+          <p>L&#x27;édition 2026 a mis l&#x27;accent sur la réponse collective de l&#x27;UE et la résilience des secteurs du transport ferroviaire et de l&#x27;énergie.</p>
+          <p>Portée : l&#x27;exercice alimente les retours d&#x27;expérience utilisés pour ajuster les mécanismes de coopération (réseau CSIRT, EU-CyCLONe) prévus par NIS2 et le Cyber Solidarity Act.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="Gestion de crise">Gestion de crise</button></li>
+            <li><button type="button" class="tag" data-tag="Énergie">Énergie</button></li>
+            <li><button type="button" class="tag" data-tag="Transport">Transport</button></li>
+            <li><button type="button" class="tag" data-tag="NIS2">NIS2</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.enisa.europa.eu/news/cyber-europe-2026-all-eyes-on-the-eus-collective-response-and-resilience" target="_blank" rel="noopener noreferrer">ENISA — « Cyber Europe 2026: All eyes on the EU&#x27;s collective response and resilience »</a> <span class="src-date">— 11 juin 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="enisa-cve" data-conf="confirme" data-section="cyber" data-tags="ENISA|CVE|EUVD|Gestion des vulnérabilités|CRA">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="enisa-cve-body">
+          <span class="card-headline">
+            <span class="card-title">L&#x27;ENISA renforce son rôle dans le programme CVE</span>
+            <span class="card-hook">Le 6 août 2026, l&#x27;OTAN et AISLE ont rejoint le programme d&#x27;autorités de numérotation CVE opéré par l&#x27;ENISA.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">6 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="enisa-cve-body" hidden>
+          <p>L&#x27;ENISA élargit son périmètre en tant que root CNA (CVE Numbering Authority) européenne, en accueillant de nouveaux membres dans son arborescence.</p>
+          <p>Contexte : ce mouvement s&#x27;inscrit dans la volonté européenne de réduire la dépendance au programme CVE américain, dont le financement a connu des incertitudes, et d&#x27;alimenter la base européenne de vulnérabilités (EUVD) prévue par NIS2.</p>
+          <p>Lien direct avec le CRA : l&#x27;infrastructure de gestion des vulnérabilités européenne est le pendant technique des obligations de signalement entrées en application le 11 septembre 2026.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="CVE">CVE</button></li>
+            <li><button type="button" class="tag" data-tag="EUVD">EUVD</button></li>
+            <li><button type="button" class="tag" data-tag="Gestion des vulnérabilités">Gestion des vulnérabilités</button></li>
+            <li><button type="button" class="tag" data-tag="CRA">CRA</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.enisa.europa.eu/news/enisa-scales-up-its-role-in-the-cve-program" target="_blank" rel="noopener noreferrer">ENISA — « ENISA scales up its role in the CVE Program »</a> <span class="src-date">— 6 août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="sante-plan" data-conf="confirme" data-section="cyber" data-tags="ENISA|Santé|Commission européenne|Commande publique">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="sante-plan-body">
+          <span class="card-headline">
+            <span class="card-title">Plan d&#x27;action cybersécurité santé : l&#x27;ENISA met en place un centre de soutien européen</span>
+            <span class="card-hook">Le 22 juillet 2026, l&#x27;ENISA a annoncé les premiers livrables du plan d&#x27;action européen pour la cybersécurité du secteur de la santé, adossés à un accord de contribution de 6 M€ sur trois ans.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">22 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="sante-plan-body" hidden>
+          <p>Le plan d&#x27;action européen pour la cybersécurité de la santé, lancé par la Commission en 2025, vise à renforcer la protection et la résilience du secteur.</p>
+          <p>Premier livrable : des lignes directrices actualisées pour les achats publics en cybersécurité hospitalière.</p>
+          <p>L&#x27;ENISA a signé un accord de contribution de 6 millions d&#x27;euros sur trois ans pour établir un centre de soutien européen à la cybersécurité du secteur de la santé.</p>
+          <p>Le centre doit développer un catalogue de services pour les établissements de santé, structuré en quatre domaines : préparation, détection, réponse et gouvernance.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="ENISA">ENISA</button></li>
+            <li><button type="button" class="tag" data-tag="Santé">Santé</button></li>
+            <li><button type="button" class="tag" data-tag="Commission européenne">Commission européenne</button></li>
+            <li><button type="button" class="tag" data-tag="Commande publique">Commande publique</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.enisa.europa.eu/news/first-steps-forward-for-the-implementation-of-the-health-action-plan" target="_blank" rel="noopener noreferrer">ENISA — « First steps forward for the implementation of the Health Action Plan »</a> <span class="src-date">— 22 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sanctions" data-section="sanctions">
+  <header class="section-head">
+    <p class="section-num">03</p>
+    <h2>Sanctions, incidents et contentieux</h2>
+    <p class="section-lead">Une amende record sur les décisions automatisées, deux sanctions françaises sur la sécurité et les droits des personnes, une fuite majeure côté administration fiscale.</p>
+    <p class="section-count" data-section-count></p>
+  </header>
+  <div class="subsection" id="sanctions-rgpd" data-sub="sanctions-rgpd">
+    <h3 class="sub-title">Sanctions des autorités de protection des données <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="san-uber" data-conf="confirme" data-section="sanctions" data-tags="RGPD|CNIL|Autoriteit Persoonsgegevens|Uber|Article 22|Décisions automatisées">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="san-uber-body">
+          <span class="card-headline">
+            <span class="card-title">Uber sanctionné à près de 825 M€ pour ses désactivations automatisées de chauffeurs</span>
+            <span class="card-hook">Le 24 août 2026, l&#x27;autorité néerlandaise, en coopération avec la CNIL, a prononcé une amende de 824 990 000 € sur le fondement de l&#x27;article 22 du RGPD.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">24 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="san-uber-body" hidden>
+          <p>L&#x27;autorité néerlandaise de protection des données (Autoriteit Persoonsgegevens) a conclu que les désactivations de comptes chauffeurs constituaient des décisions individuelles automatisées au sens de l&#x27;article 22 du RGPD, faute de toute intervention humaine effective.</p>
+          <p>Les mesures visées incluent les blocages temporaires pour suspicion de fraude et les suspensions temporaires ou définitives fondées sur des notes clients basses.</p>
+          <p>Enjeu pour les personnes concernées : un chauffeur bloqué « ne peut plus effectuer de courses et générer de revenus », ce qui caractérise un effet juridique ou significatif au sens de l&#x27;article 22.</p>
+          <p>Origine du dossier : une plainte collective déposée en 2020 par la Ligue des droits de l&#x27;Homme pour le compte de plus de 170 chauffeurs Uber.</p>
+          <p>Historique : la CNIL avait déjà prononcé deux sanctions contre Uber — 10 M€ en décembre 2023 pour des manquements à la transparence, puis 290 M€ en juillet 2024 pour des transferts de données illicites.</p>
+          <p>Portée pratique : la décision impose de documenter une intervention humaine réelle (et non formelle) dans tout dispositif de suspension, scoring ou désactivation algorithmique.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="Autoriteit Persoonsgegevens">Autoriteit Persoonsgegevens</button></li>
+            <li><button type="button" class="tag" data-tag="Uber">Uber</button></li>
+            <li><button type="button" class="tag" data-tag="Article 22">Article 22</button></li>
+            <li><button type="button" class="tag" data-tag="Décisions automatisées">Décisions automatisées</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/decisions-automatisees-sanction-de-pres-de-825-millions-deuros-lencontre-duber" target="_blank" rel="noopener noreferrer">CNIL — « Décisions automatisées : sanction de près de 825 millions d&#x27;euros à l&#x27;encontre d&#x27;UBER »</a> <span class="src-date">— 24 août 2026</span></li>
+              <li><a href="https://www.larevuedudigital.com/amende-de-825-millions-e-de-uber-a-cause-des-suspensions-automatisees-de-ses-chauffeurs/" target="_blank" rel="noopener noreferrer">La Revue du Digital — « Amende de 825 millions € de Uber à cause des suspensions automatisées de ses chauffeurs »</a> <span class="src-date">— août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="san-hopital" data-conf="confirme" data-section="sanctions" data-tags="RGPD|CNIL|Santé|Article 32|Article 34|Violation de données|MFA">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="san-hopital-body">
+          <span class="card-headline">
+            <span class="card-title">Hôpital privé de la Loire : 500 000 € après le vol de 524 867 dossiers patients</span>
+            <span class="card-hook">Le 3 septembre 2026, la CNIL sanctionne l&#x27;établissement stéphanois pour des manquements à la sécurité et à l&#x27;information des personnes après la cyberattaque de l&#x27;été 2025.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">3 septembre 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="san-hopital-body" hidden>
+          <p>La cyberattaque de l&#x27;été 2025 avait compromis le système de dossier patient informatisé de l&#x27;établissement, exposant des données de santé.</p>
+          <p>Volumétrie : 524 867 patients concernés, ainsi que 202 246 personnes de confiance.</p>
+          <p>Manquements à l&#x27;article 32 du RGPD (sécurité) : absence de VPN et d&#x27;authentification multifacteur pour les accès externes, contrôles d&#x27;accès insuffisants permettant à l&#x27;attaquant de consulter l&#x27;ensemble des dossiers, absence de supervision en temps réel permettant de détecter l&#x27;activité suspecte.</p>
+          <p>Manquement à l&#x27;article 34 du RGPD (information) : les personnes de confiance n&#x27;ont pas été informées directement alors que leurs données étaient compromises, ce qui les a empêchées de mesurer le risque et de prendre des mesures de protection.</p>
+          <p>La CNIL a assorti la sanction d&#x27;injonctions, avec des délais de mise en conformité échelonnés de 3 à 15 mois selon la nature de la mesure.</p>
+          <p>Lecture opérationnelle : le triptyque MFA sur les accès distants, cloisonnement des droits et détection est exactement celui que la CNIL retient désormais comme socle minimal dans le secteur santé.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="Santé">Santé</button></li>
+            <li><button type="button" class="tag" data-tag="Article 32">Article 32</button></li>
+            <li><button type="button" class="tag" data-tag="Article 34">Article 34</button></li>
+            <li><button type="button" class="tag" data-tag="Violation de données">Violation de données</button></li>
+            <li><button type="button" class="tag" data-tag="MFA">MFA</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/sanction-hopital-prive-loire" target="_blank" rel="noopener noreferrer">CNIL — « Violation de données en matière de santé : sanction de 500 000 euros à l&#x27;encontre de l&#x27;HÔPITAL PRIVÉ DE LA LOIRE »</a> <span class="src-date">— 3 septembre 2026</span></li>
+              <li><a href="https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/une-clinique-privee-de-saint-etienne-sanctionnee-pour-des-manquements-apres-le-vol-de-donnees-de-500-000-patients_8175071.html" target="_blank" rel="noopener noreferrer">franceinfo — « Une clinique privée de Saint-Étienne sanctionnée pour des manquements, après le vol de données de 500 000 patients »</a> <span class="src-date">— septembre 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="san-extia" data-conf="confirme" data-section="sanctions" data-tags="RGPD|CNIL|Droit à l&#x27;effacement|Article 12|Article 17|Recrutement">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="san-extia-body">
+          <span class="card-headline">
+            <span class="card-title">EXTIA : 300 000 € pour non-respect du droit à l&#x27;effacement</span>
+            <span class="card-hook">Délibération du 21 juillet 2026, publiée le 9 septembre : sur 265 demandes d&#x27;effacement reçues en 2024, plus des trois quarts n&#x27;ont pas été correctement traitées.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">21 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="san-extia-body" hidden>
+          <p>EXTIA, société de recrutement dans l&#x27;IT et l&#x27;ingénierie, faisait l&#x27;objet de plaintes d&#x27;anciens salariés et de candidats confrontés à des difficultés pour exercer leur droit à l&#x27;effacement.</p>
+          <p>Un contrôle mené en avril 2025 a révélé des défaillances systématiques dans le traitement de ces demandes.</p>
+          <p>Chiffres retenus : sur 265 demandes de suppression reçues en 2024, plus des trois quarts n&#x27;ont pas été traitées ou l&#x27;ont été de manière inadéquate ; 166 personnes n&#x27;ont reçu aucune information sur les suites données, et 27 autres ont été informées tardivement, avec des retards atteignant plusieurs mois.</p>
+          <p>Manquements retenus : article 12 (transparence et modalités d&#x27;exercice des droits) et article 17 (droit à l&#x27;effacement) du RGPD.</p>
+          <p>Point d&#x27;attention : la CNIL sanctionne également l&#x27;absence d&#x27;information sur le résultat de la demande, y compris lorsque les données avaient été supprimées automatiquement.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="Droit à l&#x27;effacement">Droit à l&#x27;effacement</button></li>
+            <li><button type="button" class="tag" data-tag="Article 12">Article 12</button></li>
+            <li><button type="button" class="tag" data-tag="Article 17">Article 17</button></li>
+            <li><button type="button" class="tag" data-tag="Recrutement">Recrutement</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/sanction-non-respect-droits-personnes-extia" target="_blank" rel="noopener noreferrer">CNIL — « Non-respect des droits des personnes : sanction de 300 000 euros à l&#x27;encontre de la société EXTIA »</a> <span class="src-date">— 9 septembre 2026</span></li>
+              <li><a href="https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en" target="_blank" rel="noopener noreferrer">EDPB — « Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR »</a> <span class="src-date">— septembre 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="subsection" id="sanctions-incidents" data-sub="sanctions-incidents">
+    <h3 class="sub-title">Incidents et violations de données <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="inc-dgfip" data-conf="confirme" data-section="sanctions" data-tags="CNIL|DGFiP|Violation de données|RGPD|Secteur public|Hameçonnage">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="inc-dgfip-body">
+          <span class="card-headline">
+            <span class="card-title">Piratage du système d&#x27;information de la DGFiP</span>
+            <span class="card-hook">Des accès illégitimes détectés le 14 août 2026 ont permis l&#x27;extraction de données fiscales et cadastrales. La CNIL a été notifiée et a ouvert ses vérifications.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">18 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="inc-dgfip-body" hidden>
+          <p>Un tiers non autorisé a accédé au système d&#x27;information de la Direction générale des Finances publiques, permettant la consultation et l&#x27;extraction de données à caractère personnel.</p>
+          <p>Données touchées : informations fiscales (revenu fiscal de référence, quotient familial, taux de prélèvement à la source), identifiants d&#x27;entreprises (SIREN et raisons sociales), données cadastrales (adresses et surfaces de biens).</p>
+          <p>Point important : les mots de passe et identifiants de connexion des usagers n&#x27;ont pas été compromis.</p>
+          <p>Particuliers comme entreprises sont concernés ; la CNIL n&#x27;a pas communiqué de volumétrie officielle dans son annonce du 18 août 2026.</p>
+          <p>Suites : le ministère a notifié la CNIL, qui procède à des vérifications sur le respect des obligations de sécurité du RGPD et peut prononcer des sanctions le cas échéant. La CNIL recommande aux personnes concernées une vigilance accrue face aux tentatives d&#x27;hameçonnage exploitant ces données.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="DGFiP">DGFiP</button></li>
+            <li><button type="button" class="tag" data-tag="Violation de données">Violation de données</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Secteur public">Secteur public</button></li>
+            <li><button type="button" class="tag" data-tag="Hameçonnage">Hameçonnage</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/piratage-du-systeme-dinformation-des-impots-les-verifications-sont-en-cours" target="_blank" rel="noopener noreferrer">CNIL — « Piratage du système d&#x27;information des impôts : les vérifications sont en cours »</a> <span class="src-date">— 18 août 2026</span></li>
+              <li><a href="https://www.impots.gouv.fr/actualite/vol-de-donnees-suite-des-acces-illegitimes-au-systeme-dinformation-de-la-dgfip" target="_blank" rel="noopener noreferrer">impots.gouv.fr — « Vol de données suite à des accès illégitimes au système d&#x27;information de la DGFiP »</a> <span class="src-date">— août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="subsection" id="sanctions-juris" data-sub="sanctions-juris">
+    <h3 class="sub-title">Jurisprudence <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="jur-cjue" data-conf="nuance" data-section="sanctions" data-tags="CJUE|RGPD|Jurisprudence|Proportionnalité|Publication de sanctions">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="jur-cjue-body">
+          <span class="card-headline">
+            <span class="card-title">CJUE : la publication en ligne des sanctions antidopage peut être conforme au RGPD</span>
+            <span class="card-hook">Dans un arrêt de grande chambre du 14 juillet 2026 (C-474/24), la Cour admet la licéité de la publication nominative, sous réserve d&#x27;un examen de proportionnalité au cas par cas.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">14 juillet 2026</span>
+            <span class="badge badge-nuance">Nuancé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="jur-cjue-body" hidden>
+          <p>Affaire AR e.a. contre Österreichische Datenschutzbehörde e.a., renvoi préjudiciel tranché par la grande chambre.</p>
+          <p>La Cour juge que la publication en ligne du nom de sportifs professionnels ayant enfreint les règles antidopage peut être conforme au droit de l&#x27;Union.</p>
+          <p>Réserve posée : l&#x27;existence d&#x27;une base légale ne suffit pas à justifier le traitement. Une appréciation individuelle de la proportionnalité de la mesure est nécessaire avant toute divulgation publique.</p>
+          <p>Portée générale : le raisonnement dépasse le contentieux sportif et concerne tout dispositif de publication de sanctions ou de décisions nominatives (name and shame réglementaire, registres publics).</p>
+          <p>Nuance sur la source : le texte intégral de l&#x27;arrêt n&#x27;a pas pu être consulté directement lors de la rédaction de cette fiche ; le résumé s&#x27;appuie sur des analyses secondaires concordantes.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CJUE">CJUE</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Jurisprudence">Jurisprudence</button></li>
+            <li><button type="button" class="tag" data-tag="Proportionnalité">Proportionnalité</button></li>
+            <li><button type="button" class="tag" data-tag="Publication de sanctions">Publication de sanctions</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://juricaf.org/arret/CJUE-COURDEJUSTICEDELUNIONEUROPEENNE-20260714-C47424" target="_blank" rel="noopener noreferrer">Juricaf — CJUE, arrêt du 14 juillet 2026, AR e.a. c. Österreichische Datenschutzbehörde e.a., C-474/24</a> <span class="src-date">— 14 juillet 2026</span></li>
+              <li><a href="https://www.vigier-avocats.com/donnees-personnelles-les-principales-actualites-de-lete-2026/" target="_blank" rel="noopener noreferrer">Vigier Avocats — « Données personnelles : les principales actualités de l&#x27;été 2026 »</a> <span class="src-date">— été 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="doctrine" data-section="doctrine">
+  <header class="section-head">
+    <p class="section-num">04</p>
+    <h2>Doctrine et outils de conformité</h2>
+    <p class="section-lead">Lignes directrices du CEPD sur l&#x27;anonymisation et la blockchain, et une série de publications CNIL directement exploitables en entreprise.</p>
+    <p class="section-count" data-section-count></p>
+  </header>
+  <div class="subsection" id="doc-cepd" data-sub="doc-cepd">
+    <h3 class="sub-title">Lignes directrices du CEPD <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="doc-anonym" data-conf="confirme" data-section="doctrine" data-tags="CEPD|CNIL|RGPD|Anonymisation|Consultation publique">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-anonym-body">
+          <span class="card-headline">
+            <span class="card-title">Le CEPD adopte des lignes directrices sur l&#x27;anonymisation</span>
+            <span class="card-hook">Adoptées le 7 juillet 2026, elles proposent une grille à trois critères et deux approches — contextuelle ou simplifiée — pour déterminer si une donnée est réellement anonyme.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">7 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-anonym-body" hidden>
+          <p>Le CEPD rappelle qu&#x27;une donnée est anonyme lorsqu&#x27;elle ne permet ni d&#x27;identifier ni de rendre identifiable une personne physique.</p>
+          <p>La grille d&#x27;analyse repose sur trois critères cumulatifs : impossibilité d&#x27;individualiser un enregistrement, impossibilité de corréler des données, impossibilité d&#x27;inférer une information sur une personne.</p>
+          <p>Deux approches sont offertes : une approche « contextuelle », qui tient compte des capacités effectives de l&#x27;entité concernée, et une approche « simplifiée », plus conservatrice. Le Comité précise que « la question de savoir si les moyens sont raisonnablement susceptibles d&#x27;être utilisés dépend du point de vue de l&#x27;entité concernée ».</p>
+          <p>Consultation publique ouverte jusqu&#x27;au 30 octobre 2026.</p>
+          <p>Enjeu direct pour l&#x27;IA : l&#x27;anonymisation des jeux de données d&#x27;entraînement est le principal levier permettant de sortir du champ du RGPD. Le durcissement ou l&#x27;assouplissement de la grille a un effet immédiat sur les projets de modèles.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CEPD">CEPD</button></li>
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Anonymisation">Anonymisation</button></li>
+            <li><button type="button" class="tag" data-tag="Consultation publique">Consultation publique</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs" target="_blank" rel="noopener noreferrer">CNIL — « Le CEPD met en lumière l&#x27;anonymisation et le moissonnage pour l&#x27;IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs »</a> <span class="src-date">— 9 juillet 2026</span></li>
+              <li><a href="https://www.eversheds-sutherland.com/en/global/insights/edp-bs-new-guidelines-on-anonymisation-a-more-nuanced-approach-for-the-ai-era" target="_blank" rel="noopener noreferrer">Eversheds Sutherland — « EDPB&#x27;s New Guidelines on Anonymisation: A more nuanced approach for the AI era »</a> <span class="src-date">— 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-blockchain" data-conf="confirme" data-section="doctrine" data-tags="CEPD|RGPD|Blockchain|Droit à l&#x27;effacement">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-blockchain-body">
+          <span class="card-headline">
+            <span class="card-title">Version finale des lignes directrices du CEPD sur la chaîne de blocs</span>
+            <span class="card-hook">Également adoptées le 7 juillet 2026, elles expliquent comment les différentes architectures de blockchain affectent le traitement de données personnelles.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">7 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-blockchain-body" hidden>
+          <p>Après une phase de consultation, le CEPD a adopté la version définitive de ses lignes directrices sur l&#x27;application du RGPD aux traitements reposant sur des technologies de registre distribué.</p>
+          <p>Le document distingue les architectures (publique/permissionnée, avec ou sans autorité centrale) et leurs conséquences sur l&#x27;identification du responsable de traitement.</p>
+          <p>Points sensibles traités : l&#x27;immuabilité du registre face au droit à l&#x27;effacement et au droit de rectification, et les transferts hors Union européenne résultant de la distribution des nœuds.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CEPD">CEPD</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Blockchain">Blockchain</button></li>
+            <li><button type="button" class="tag" data-tag="Droit à l&#x27;effacement">Droit à l&#x27;effacement</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs" target="_blank" rel="noopener noreferrer">CNIL — « Le CEPD met en lumière l&#x27;anonymisation et le moissonnage pour l&#x27;IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs »</a> <span class="src-date">— 9 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-interreg" data-conf="confirme" data-section="doctrine" data-tags="CEPD|CNIL|Interrégulation|RGPD|DSA|AI Act">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-interreg-body">
+          <span class="card-headline">
+            <span class="card-title">Le CEPD demande une base légale pour le partage d&#x27;informations entre régulateurs</span>
+            <span class="card-hook">Le 20 juillet 2026, le Comité souligne l&#x27;absence de fondement juridique clair pour les échanges d&#x27;informations entre autorités de régulation du numérique.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">20 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-interreg-body" hidden>
+          <p>L&#x27;empilement des régulations numériques européennes (RGPD, DSA, DMA, AI Act, NIS2, DORA) multiplie les autorités compétentes sur des périmètres partiellement superposés.</p>
+          <p>Le CEPD relève que ces autorités ont besoin d&#x27;échanger des informations pour instruire leurs dossiers, mais que le cadre juridique actuel ne prévoit pas systématiquement de base légale permettant ces transmissions lorsqu&#x27;elles portent sur des données personnelles.</p>
+          <p>Le Comité appelle donc le législateur européen à prévoir explicitement ces flux.</p>
+          <p>Enjeu pratique pour les entreprises : une coopération interrégulateurs formalisée signifie qu&#x27;un contrôle initié par une autorité peut plus facilement alimenter une procédure ouverte par une autre.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CEPD">CEPD</button></li>
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="Interrégulation">Interrégulation</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="DSA">DSA</button></li>
+            <li><button type="button" class="tag" data-tag="AI Act">AI Act</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/cepd-base-juridique-interregulation" target="_blank" rel="noopener noreferrer">CNIL — « Le CEPD demande une base légale pour le partage d&#x27;informations entre régulateurs »</a> <span class="src-date">— 20 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="subsection" id="doc-cnil" data-sub="doc-cnil">
+    <h3 class="sub-title">Publications opérationnelles de la CNIL <span class="badge-count" data-sub-count></span></h3>
+    <div class="cards">
+      <article class="card" id="doc-dpo" data-conf="confirme" data-section="doctrine" data-tags="CNIL|RGPD|DPO|Gouvernance">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-dpo-body">
+          <span class="card-headline">
+            <span class="card-title">Identifier et gérer les conflits d&#x27;intérêts du DPO</span>
+            <span class="card-hook">Fiche publiée le 10 août 2026 : les fonctions additionnelles confiées au délégué à la protection des données ne doivent ni entraver sa mission ni créer de conflit d&#x27;intérêts.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">10 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-dpo-body" hidden>
+          <p>La CNIL précise les critères permettant d&#x27;identifier une situation de conflit d&#x27;intérêts au sens de l&#x27;article 38.6 du RGPD.</p>
+          <p>Le point de vigilance central : les fonctions décisionnelles sur les finalités et les moyens des traitements — notamment dans les directions informatiques, juridiques ou conformité — sont difficilement compatibles avec la mission de DPO.</p>
+          <p>La fiche propose une méthode d&#x27;analyse des cumuls de fonctions et des mesures d&#x27;atténuation lorsque le cumul est inévitable (organisations de petite taille).</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="DPO">DPO</button></li>
+            <li><button type="button" class="tag" data-tag="Gouvernance">Gouvernance</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/dpo-identifier-gerer-conflits-interets" target="_blank" rel="noopener noreferrer">CNIL — « Délégué à la protection des données : identifier et gérer les conflits d&#x27;intérêts liés à la fonction de DPO »</a> <span class="src-date">— 10 août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-salaries" data-conf="confirme" data-section="doctrine" data-tags="CNIL|RGPD|Ressources humaines|Surveillance|DLP">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-salaries-body">
+          <span class="card-headline">
+            <span class="card-title">Contrôle de l&#x27;activité des personnes employées</span>
+            <span class="card-hook">Publication du 9 juillet 2026 rappelant le cadre applicable à la surveillance des salariés : proportionnalité, information préalable, limitation des dispositifs.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">9 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-salaries-body" hidden>
+          <p>La CNIL détaille les conditions de licéité des dispositifs de contrôle de l&#x27;activité professionnelle : vidéoprotection, journalisation, contrôle des accès, outils de mesure de productivité.</p>
+          <p>Les exigences constantes rappelées : proportionnalité au regard de la finalité poursuivie, information préalable des personnes et consultation des instances représentatives du personnel, durée de conservation limitée.</p>
+          <p>Sujet d&#x27;actualité : la montée en charge des outils de télémétrie applicative et des solutions de détection de fuite de données (DLP) place ces dispositifs à la frontière de la sécurité du SI et de la surveillance des salariés.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Ressources humaines">Ressources humaines</button></li>
+            <li><button type="button" class="tag" data-tag="Surveillance">Surveillance</button></li>
+            <li><button type="button" class="tag" data-tag="DLP">DLP</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/controle-de-lactivite-des-personnes-employees" target="_blank" rel="noopener noreferrer">CNIL — « Travail, ressources humaines : le contrôle de l&#x27;activité des personnes employées »</a> <span class="src-date">— 9 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-geoloc" data-conf="confirme" data-section="doctrine" data-tags="CNIL|RGPD|Géolocalisation|Applications mobiles|Consentement">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-geoloc-body">
+          <span class="card-headline">
+            <span class="card-title">Géolocalisation et applications mobiles</span>
+            <span class="card-hook">Le 7 juillet 2026, la CNIL publie un double jeu de ressources — l&#x27;un pour les professionnels, l&#x27;autre pour les utilisateurs — sur les règles applicables aux données de localisation.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">7 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-geoloc-body" hidden>
+          <p>La CNIL rappelle le cadre applicable à la collecte de données de géolocalisation par les applications mobiles : nécessité du recueil du consentement, granularité de la localisation au regard de la finalité, transparence sur les destinataires.</p>
+          <p>Deux publications distinctes sont mises en ligne le même jour : une destinée aux éditeurs et professionnels, une destinée au grand public.</p>
+          <p>Articulation : ces ressources s&#x27;inscrivent dans le prolongement de la recommandation de la CNIL sur les applications mobiles, dont la période de mise en conformité s&#x27;est achevée en 2025.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Géolocalisation">Géolocalisation</button></li>
+            <li><button type="button" class="tag" data-tag="Applications mobiles">Applications mobiles</button></li>
+            <li><button type="button" class="tag" data-tag="Consentement">Consentement</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles" target="_blank" rel="noopener noreferrer">CNIL — « Géolocalisation et applications mobiles : quelles règles pour protéger les données des utilisateurs ? »</a> <span class="src-date">— 7 juillet 2026</span></li>
+              <li><a href="https://www.cnil.fr/fr/geolocalisation-applications-mobiles-proteger-vos-donnees" target="_blank" rel="noopener noreferrer">CNIL — « Géolocalisation et applications mobiles : comment protéger vos données ? »</a> <span class="src-date">— 7 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-pixels" data-conf="confirme" data-section="doctrine" data-tags="CNIL|Pixels de suivi|Cookies|Consentement|Marketing">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-pixels-body">
+          <span class="card-headline">
+            <span class="card-title">Pixels de suivi dans les courriels : questions-réponses de la CNIL</span>
+            <span class="card-hook">Le 22 juillet 2026, la CNIL publie une FAQ accompagnant sa recommandation sur les pixels de suivi dans les emails, ainsi qu&#x27;un webinaire dédié aux prestataires.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">22 juillet 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-pixels-body" hidden>
+          <p>La recommandation de la CNIL sur les pixels dans les courriers électroniques assimile ces traceurs aux cookies au regard de l&#x27;article 82 de la loi Informatique et Libertés : leur dépôt est soumis à consentement, hors exceptions strictement délimitées.</p>
+          <p>La FAQ traite les cas concrets remontés par les acteurs : mesure d&#x27;audience, détection de la délivrabilité, gestion des désabonnements, chaînes de sous-traitance.</p>
+          <p>Un webinaire destiné aux fournisseurs et prestataires de l&#x27;écosystème « pixels » a été mis en ligne le même jour.</p>
+          <p>Public visé : toute organisation opérant du mailing marketing ou transactionnel, ainsi que ses routeurs et prestataires CRM.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="Pixels de suivi">Pixels de suivi</button></li>
+            <li><button type="button" class="tag" data-tag="Cookies">Cookies</button></li>
+            <li><button type="button" class="tag" data-tag="Consentement">Consentement</button></li>
+            <li><button type="button" class="tag" data-tag="Marketing">Marketing</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/faq-recommandation-pixels-courriers-electroniques" target="_blank" rel="noopener noreferrer">CNIL — « Questions-réponses : recommandation relative aux pixels dans les courriers électroniques »</a> <span class="src-date">— 22 juillet 2026</span></li>
+              <li><a href="https://www.cnil.fr/fr/webinaire-pixels-de-suivi-fournisseurs-prestataires" target="_blank" rel="noopener noreferrer">CNIL — « Revoir le webinaire : fournisseurs et prestataires de l&#x27;écosystème pixels »</a> <span class="src-date">— 22 juillet 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-education" data-conf="confirme" data-section="doctrine" data-tags="CNIL|RGPD|Éducation|Outils collaboratifs|Transferts hors UE">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-education-body">
+          <span class="card-headline">
+            <span class="card-title">Outils collaboratifs en ligne : règles pour l&#x27;enseignement scolaire et supérieur</span>
+            <span class="card-hook">Le 24 août 2026, la CNIL publie deux jeux de règles et bonnes pratiques pour l&#x27;usage d&#x27;outils collaboratifs dans l&#x27;enseignement des premier et second degrés d&#x27;une part, dans le supérieur d&#x27;autre part.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">24 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-education-body" hidden>
+          <p>Les publications traitent du recours aux suites collaboratives et outils de visioconférence par les établissements d&#x27;enseignement.</p>
+          <p>Sujets couverts : base légale du traitement, rôle respectif de l&#x27;établissement et du fournisseur, transferts hors UE, durée de conservation, protection spécifique des données des élèves mineurs.</p>
+          <p>Calendrier : la publication intervient à la rentrée scolaire 2026, période de renouvellement des choix d&#x27;outils par les établissements.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Éducation">Éducation</button></li>
+            <li><button type="button" class="tag" data-tag="Outils collaboratifs">Outils collaboratifs</button></li>
+            <li><button type="button" class="tag" data-tag="Transferts hors UE">Transferts hors UE</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/enseignement-premier-second-degres-bonnes-pratiques-outils-collaboratifs" target="_blank" rel="noopener noreferrer">CNIL — « Enseignement du premier et du second degrés : les règles et bonnes pratiques pour utiliser les outils collaboratifs en ligne »</a> <span class="src-date">— 24 août 2026</span></li>
+              <li><a href="https://www.cnil.fr/fr/enseignement-superieur-bonnes-pratiques-outils-collaboratifs" target="_blank" rel="noopener noreferrer">CNIL — « Enseignement supérieur : les règles et bonnes pratiques pour utiliser des outils collaboratifs en ligne »</a> <span class="src-date">— 24 août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-facturation" data-conf="confirme" data-section="doctrine" data-tags="CNIL|RGPD|Facturation électronique|Entreprises">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-facturation-body">
+          <span class="card-headline">
+            <span class="card-title">Facturation électronique : les enjeux de protection des données</span>
+            <span class="card-hook">Publication du 10 septembre 2026 sur les implications de la réforme de la facturation électronique pour les données personnelles.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">10 septembre 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-facturation-body" hidden>
+          <p>La généralisation de la facturation électronique entre entreprises impose de nouveaux flux de données transitant par des plateformes agréées et par l&#x27;administration fiscale.</p>
+          <p>La CNIL examine les enjeux associés : nature des données transmises, rôles des plateformes de dématérialisation, durées de conservation et sécurité des échanges.</p>
+          <p>Public concerné : toutes les entreprises assujetties à la TVA en France, ainsi que leurs prestataires de dématérialisation.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="RGPD">RGPD</button></li>
+            <li><button type="button" class="tag" data-tag="Facturation électronique">Facturation électronique</button></li>
+            <li><button type="button" class="tag" data-tag="Entreprises">Entreprises</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/facturation-electronique-quels-enjeux" target="_blank" rel="noopener noreferrer">CNIL — « Facturation électronique : quels enjeux pour la protection des données personnelles ? »</a> <span class="src-date">— 10 septembre 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" id="doc-college" data-conf="confirme" data-section="doctrine" data-tags="CNIL|Gouvernance|IA|Anonymisation">
+        <button type="button" class="card-head" aria-expanded="false" aria-controls="doc-college-body">
+          <span class="card-headline">
+            <span class="card-title">Renouvellement partiel du collège de la CNIL</span>
+            <span class="card-hook">Cinq nouveaux membres ont été nommés au collège de la CNIL le 2 août 2026, dont des profils spécialisés en IA et en sécurité des données.</span>
+          </span>
+          <span class="card-meta">
+            <span class="card-date">5 août 2026</span>
+            <span class="badge badge-confirme">Confirmé</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="card-body" id="doc-college-body" hidden>
+          <p>Le collège de la CNIL, autorité de décision en matière de sanctions et de doctrine, a été partiellement renouvelé le 2 août 2026.</p>
+          <p>Parmi les profils entrants figurent notamment Arnaud Latil, spécialiste de l&#x27;intelligence artificielle, et Benjamin Nguyen, spécialiste de la sécurité des données et de l&#x27;anonymisation.</p>
+          <p>Lecture : la composition du collège est un signal sur les orientations doctrinales à venir, en particulier sur les dossiers IA et anonymisation qui structurent l&#x27;agenda 2026-2027.</p>
+          <ul class="tags">
+            <li><button type="button" class="tag" data-tag="CNIL">CNIL</button></li>
+            <li><button type="button" class="tag" data-tag="Gouvernance">Gouvernance</button></li>
+            <li><button type="button" class="tag" data-tag="IA">IA</button></li>
+            <li><button type="button" class="tag" data-tag="Anonymisation">Anonymisation</button></li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">Sources</p>
+            <ol>
+              <li><a href="https://www.cnil.fr/fr/college-de-la-cnil-5-nouveaux-membres-nommes-le-2-aout-2026" target="_blank" rel="noopener noreferrer">CNIL — « Collège de la CNIL : 5 nouveaux membres nommés le 2 août 2026 »</a> <span class="src-date">— 5 août 2026</span></li>
+            </ol>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-copy" data-copy>Copier pour Teams</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="glossaire">
+  <header class="section-head">
+    <p class="section-num">—</p>
+    <h2>Glossaire</h2>
+    <p class="section-lead">Les six textes et notions qui reviennent le plus dans cette veille.</p>
+  </header>
+  <ol class="glossary">
+    <li>
+      <span class="gloss-num">01</span>
+      <div>
+        <p class="gloss-term">AI Act</p>
+        <p class="gloss-def">Règlement (UE) 2024/1689 établissant des règles harmonisées sur l&#x27;intelligence artificielle. Approche par les risques : pratiques interdites, systèmes à haut risque, obligations de transparence, régime spécifique pour les modèles à usage général.</p>
+      </div>
+    </li>
+    <li>
+      <span class="gloss-num">02</span>
+      <div>
+        <p class="gloss-term">CRA — Cyber Resilience Act</p>
+        <p class="gloss-def">Règlement (UE) 2024/2847 sur les exigences de cybersécurité des produits comportant des éléments numériques. Impose sécurité dès la conception, gestion des vulnérabilités et signalement, avec marquage CE.</p>
+      </div>
+    </li>
+    <li>
+      <span class="gloss-num">03</span>
+      <div>
+        <p class="gloss-term">NIS2</p>
+        <p class="gloss-def">Directive (UE) 2022/2555 relative à un niveau élevé commun de cybersécurité dans l&#x27;Union. Élargit fortement le périmètre des entités régulées (entités essentielles et importantes) et impose des obligations de gestion des risques et de notification d&#x27;incident.</p>
+      </div>
+    </li>
+    <li>
+      <span class="gloss-num">04</span>
+      <div>
+        <p class="gloss-term">DORA</p>
+        <p class="gloss-def">Règlement (UE) 2022/2554 sur la résilience opérationnelle numérique du secteur financier. Couvre la gestion des risques TIC, les tests de résilience et la surveillance des prestataires tiers critiques.</p>
+      </div>
+    </li>
+    <li>
+      <span class="gloss-num">05</span>
+      <div>
+        <p class="gloss-term">CEPD (EDPB)</p>
+        <p class="gloss-def">Comité européen de la protection des données. Réunit les autorités nationales (dont la CNIL) et adopte lignes directrices, avis et décisions contraignantes assurant l&#x27;application cohérente du RGPD.</p>
+      </div>
+    </li>
+    <li>
+      <span class="gloss-num">06</span>
+      <div>
+        <p class="gloss-term">Entité essentielle / entité importante</p>
+        <p class="gloss-def">Les deux catégories d&#x27;entités régulées par NIS2. Elles se distinguent par le secteur, la taille et le niveau de criticité, et par l&#x27;intensité du régime de supervision (contrôle ex ante pour les entités essentielles, ex post pour les entités importantes).</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="methode">
+  <header class="section-head">
+    <p class="section-num">—</p>
+    <h2>Méthode</h2>
+    <p class="section-lead">Comment chaque actualité a été datée, recoupée et qualifiée.</p>
+  </header>
+
+  <div class="method">
+    <div class="method-block">
+      <h3>Datation et recoupement</h3>
+      <p>Chaque actualité porte la date de l'acte lui-même — délibération, adoption, publication de lignes directrices, entrée en application — et non la date de reprise par la presse. Lorsque les deux diffèrent de façon significative, le corps de la fiche le précise (par exemple une délibération du 21 juillet publiée le 9 septembre).</p>
+      <p>La priorité a été donnée aux sources primaires : sites des régulateurs (CNIL, ENISA, CEPD, Commission européenne, ANSSI), textes officiels et communiqués. La presse spécialisée n'est utilisée qu'en complément, ou lorsque aucune source primaire accessible ne couvre le fait.</p>
+      <p>Lorsque deux sources donnent des dates divergentes pour un même fait, la divergence est signalée explicitement dans la fiche plutôt qu'arbitrée silencieusement.</p>
+    </div>
+
+    <div class="method-block">
+      <h3>Les trois niveaux de confiance</h3>
+      <dl class="conf-legend">
+        <dt><span class="badge badge-confirme">Confirmé</span></dt>
+        <dd>Recoupé par au moins une source primaire (texte officiel, communiqué de régulateur) ou par deux sources secondaires indépendantes.</dd>
+        <dt><span class="badge badge-nuance">Nuancé</span></dt>
+        <dd>Fait établi, mais dont les chiffres, le périmètre, la datation ou la formulation doivent être relativisés. La fiche indique ce qui est incertain.</dd>
+        <dt><span class="badge badge-rapporte">Rapporté</span></dt>
+        <dd>Rapporté par la presse, sans confirmation officielle des parties concernées à la date de rédaction.</dd>
+      </dl>
+    </div>
+
+    <div class="method-block">
+      <h3>Périmètre et limites</h3>
+      <p>Périmètre : réglementation cybersécurité et intelligence artificielle applicable en France et dans l'Union européenne (RGPD, AI Act, NIS2, DORA, CRA, référentiels ANSSI et CNIL, doctrine du CEPD, jurisprudence de la CJUE), du 1<sup>er</sup> juin au 11 septembre 2026.</p>
+      <p>Limites assumées : cette veille n'est pas exhaustive. Elle privilégie les faits ayant un effet opérationnel identifiable — une échéance, une obligation nouvelle, une grille d'analyse réutilisable, une sanction dont le raisonnement fait précédent. Aucun chiffre ni aucune source n'a été inventé ; les liens renvoient aux pages réellement consultées.</p>
+      <p>Ce document ne constitue pas un conseil juridique.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Maxime Mikikian</strong> — <a href="mailto:maximemikikian@gmail.com">maximemikikian@gmail.com</a> · généré le 11 septembre 2026</p>
+    <p class="footer-note">Site statique, sans dépendance externe. Données arrêtées au 11 septembre 2026.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="script.js"></script>
+</body>
+</html>
