@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Veille Réglementaire Cyber &amp; IA — juin/septembre 2026</title>
+<title>Cyber Watch — juin/septembre 2026</title>
 <meta name="description" content="Veille réglementaire cybersécurité et intelligence artificielle — France et Union européenne, juin à septembre 2026.">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
 <header class="site-header">
   <div class="wrap">
     <p class="eyebrow">Veille réglementaire</p>
-    <h1>Veille Réglementaire Cyber &amp; IA</h1>
+    <h1>Cyber Watch</h1>
     <p class="subtitle">France · Union européenne — juin à septembre 2026</p>
 
     <div class="stats" role="list">
@@ -40,14 +40,20 @@
 
 <section class="panel" aria-labelledby="filtres-titre">
   <div class="panel-head">
-    <h2 id="filtres-titre">Filtres</h2>
+    <h2 id="filtres-titre">
+      <button type="button" class="panel-toggle" id="toggle-filters" aria-expanded="true" aria-controls="facets">
+        <span class="chevron" aria-hidden="true"></span>
+        Filtres
+        <span class="active-count" id="active-count" hidden></span>
+      </button>
+    </h2>
     <div class="panel-actions">
       <button type="button" class="btn" id="expand-all">Tout déplier</button>
       <button type="button" class="btn" id="collapse-all">Tout replier</button>
     </div>
   </div>
 
-  <div class="facets">
+  <div class="facets" id="facets">
     <fieldset class="facet">
       <legend>Rubrique</legend>
       <div class="chips">
@@ -162,6 +168,7 @@
 
   <div class="panel-foot">
     <button type="button" class="btn btn-ghost" id="reset-filters">Réinitialiser les filtres</button>
+    <p class="hint">Les boutons « Tout déplier / Tout replier » agissent sur les cartes d'actualités.</p>
     <p class="result-count" id="result-count" aria-live="polite"></p>
   </div>
 </section>

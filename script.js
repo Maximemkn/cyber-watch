@@ -26,6 +26,28 @@
     toastTimer = setTimeout(function () { toastEl.hidden = true; }, 2200);
   }
 
+  /* ------------------------------------------- Repliage du panneau de filtres */
+
+  var toggleFilters = document.getElementById('toggle-filters');
+  var facetsBox     = document.getElementById('facets');
+  var activeCount   = document.getElementById('active-count');
+
+  function setFiltersOpen(open) {
+    if (!toggleFilters || !facetsBox) return;
+    toggleFilters.setAttribute('aria-expanded', open ? 'true' : 'false');
+    facetsBox.hidden = !open;
+  }
+
+  if (toggleFilters && facetsBox) {
+    toggleFilters.addEventListener('click', function () {
+      setFiltersOpen(toggleFilters.getAttribute('aria-expanded') !== 'true');
+    });
+    // Replié par défaut sur petit écran : le panneau occuperait sinon tout l'écran.
+    if (window.matchMedia && window.matchMedia('(max-width: 720px)').matches) {
+      setFiltersOpen(false);
+    }
+  }
+
   /* ----------------------------------------------------------- Accordéons */
 
   function setExpanded(card, expanded) {
@@ -140,6 +162,13 @@
     }
 
     syncTagButtons(sel.tag);
+
+    // Nombre de filtres actifs, visible même panneau replié
+    if (activeCount) {
+      var active = sel.section.length + sel.conf.length + sel.tag.length;
+      activeCount.textContent = active + (active > 1 ? ' filtres actifs' : ' filtre actif');
+      activeCount.hidden = (active === 0);
+    }
   }
 
   facetInputs.forEach(function (input) {
