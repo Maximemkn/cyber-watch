@@ -16,11 +16,13 @@
     <h1>Cyber Watch</h1>
     <p class="subtitle">France · Union européenne — juin à septembre 2026</p>
 
+    <!-- Les quatre nombres ci-dessous sont recalculés au chargement par script.js
+         à partir des cartes présentes. Inutile de les modifier à la main. -->
     <div class="stats" role="list">
-      <div class="stat" role="listitem"><span class="stat-num">32</span><span class="stat-lab">actualités</span></div>
-      <div class="stat" role="listitem"><span class="stat-num">26</span><span class="stat-lab">confirmées</span></div>
-      <div class="stat" role="listitem"><span class="stat-num">47</span><span class="stat-lab">sources citées</span></div>
-      <div class="stat" role="listitem"><span class="stat-num">86</span><span class="stat-lab">mots-clés</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="total">32</span><span class="stat-lab">actualités</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="confirme">26</span><span class="stat-lab">confirmées</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="sources">47</span><span class="stat-lab">sources citées</span></div>
+      <div class="stat" role="listitem"><span class="stat-num" data-stat="tags">86</span><span class="stat-lab">mots-clés</span></div>
     </div>
   </div>
 </header>
@@ -75,7 +77,9 @@
 
     <fieldset class="facet facet-wide">
       <legend>Éditeur / mot-clé</legend>
-      <div class="chips chips-scroll">
+      <!-- Cette liste est régénérée au chargement par script.js à partir des
+           attributs data-tags des cartes. Inutile de l'éditer à la main. -->
+      <div class="chips chips-scroll" id="tag-chips">
         <label class="chip"><input type="checkbox" data-facet="tag" value="AI Act"><span>AI Act</span></label>
         <label class="chip"><input type="checkbox" data-facet="tag" value="Anonymisation"><span>Anonymisation</span></label>
         <label class="chip"><input type="checkbox" data-facet="tag" value="ANSSI"><span>ANSSI</span></label>

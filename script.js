@@ -10,8 +10,86 @@
   var cards        = Array.prototype.slice.call(document.querySelectorAll('.card'));
   var sections     = Array.prototype.slice.call(document.querySelectorAll('.section[data-section]'));
   var subsections  = Array.prototype.slice.call(document.querySelectorAll('.subsection'));
-  var facetInputs  = Array.prototype.slice.call(document.querySelectorAll('[data-facet]'));
   var emptyState   = document.getElementById('empty-state');
+
+  /* ==========================================================================
+     AUTO-CALCUL — à partir des cartes réellement présentes dans la page.
+     Pour ajouter une actualité, il suffit de coller un bloc <article class="card">
+     dans la bonne sous-rubrique : le bandeau de stats, la liste des mots-clés
+     filtrables et tous les compteurs se mettent à jour seuls.
+     ========================================================================== */
+
+  function tagsOf(card) {
+    var raw = card.getAttribute('data-tags') || '';
+    return raw ? raw.split('|').map(function (t) { return t.trim(); }).filter(Boolean) : [];
+  }
+
+  function allTags() {
+    var seen = {};
+    var list = [];
+    cards.forEach(function (card) {
+      tagsOf(card).forEach(function (t) {
+        if (!seen[t]) { seen[t] = true; list.push(t); }
+      });
+    });
+    return list.sort(function (a, b) {
+      return a.toLowerCase().localeCompare(b.toLowerCase(), 'fr');
+    });
+  }
+
+  function countSources() {
+    var seen = {};
+    var n = 0;
+    Array.prototype.forEach.call(document.querySelectorAll('.sources a[href]'), function (a) {
+      var href = a.getAttribute('href');
+      if (href && !seen[href]) { seen[href] = true; n++; }
+    });
+    return n;
+  }
+
+  /* Bandeau de stats */
+  function renderStats() {
+    var values = {
+      total: cards.length,
+      confirme: cards.filter(function (c) { return c.getAttribute('data-conf') === 'confirme'; }).length,
+      sources: countSources(),
+      tags: allTags().length
+    };
+    Object.keys(values).forEach(function (key) {
+      var el = document.querySelector('[data-stat="' + key + '"]');
+      if (el) el.textContent = values[key];
+    });
+  }
+
+  /* Cases à cocher « Éditeur / mot-clé » */
+  function renderTagFacet() {
+    var box = document.getElementById('tag-chips');
+    if (!box) return;
+    var previously = {};
+    Array.prototype.forEach.call(box.querySelectorAll('input:checked'), function (i) {
+      previously[i.value] = true;
+    });
+    box.textContent = '';
+    allTags().forEach(function (tag) {
+      var label = document.createElement('label');
+      label.className = 'chip';
+      var input = document.createElement('input');
+      input.type = 'checkbox';
+      input.setAttribute('data-facet', 'tag');
+      input.value = tag;
+      if (previously[tag]) input.checked = true;
+      var span = document.createElement('span');
+      span.textContent = tag;
+      label.appendChild(input);
+      label.appendChild(span);
+      box.appendChild(label);
+    });
+  }
+
+  renderStats();
+  renderTagFacet();
+
+  var facetInputs  = Array.prototype.slice.call(document.querySelectorAll('[data-facet]'));
   var resultCount  = document.getElementById('result-count');
   var toastEl      = document.getElementById('toast');
   var toastTimer   = null;
@@ -92,10 +170,7 @@
       .map(function (i) { return i.value; });
   }
 
-  function cardTags(card) {
-    var raw = card.getAttribute('data-tags') || '';
-    return raw ? raw.split('|') : [];
-  }
+  function cardTags(card) { return tagsOf(card); }
 
   function matches(card, sel) {
     if (sel.section.length && sel.section.indexOf(card.getAttribute('data-section')) === -1) return false;
