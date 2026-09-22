@@ -1,0 +1,115 @@
+name: Mise à jour de la veille
+
+# Recherche les nouvelles actualités réglementaires, les insère dans index.html
+# et ouvre une pull request. RIEN n'est publié sans relecture humaine.
+
+on:
+  schedule:
+    # Tous les lundis à 05:00 UTC = 07:00 à Paris l'été, 06:00 l'hiver.
+    # GitHub n'applique aucun fuseau : le cron est toujours en UTC.
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Rechercher les actualités depuis cette date (AAAA-MM-JJ). Vide = depuis la dernière mise à jour enregistrée."
+        required: false
+        type: string
+      max_items:
+        description: "Nombre maximum d'actualités à ajouter"
+        required: false
+        default: '10'
+        type: string
+      dry_run:
+        description: "Simulation : analyse et journalise, sans ouvrir de pull request"
+        required: false
+        default: false
+        type: boolean
+
+# Le job a besoin d'écrire une branche et d'ouvrir une PR. Il n'écrit jamais sur main.
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: veille-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Vérifier que la clé API est configurée
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Le secret ANTHROPIC_API_KEY est absent."
+            echo "::error::Settings > Secrets and variables > Actions > New repository secret"
+            exit 1
+          fi
+
+      - name: Rechercher et insérer les nouvelles actualités
+        id: veille
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-5' }}
+          SINCE: ${{ inputs.since }}
+          MAX_ITEMS: ${{ inputs.max_items || '10' }}
+        run: node scripts/update-veille.mjs
+
+      - name: Contrôler l'intégrité du HTML produit
+        if: steps.veille.outputs.added != '0'
+        run: node scripts/check-html.mjs
+
+      - name: Ouvrir la pull request
+        if: steps.veille.outputs.added != '0' && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ADDED: ${{ steps.veille.outputs.added }}
+          PERIOD: ${{ steps.veille.outputs.period }}
+        run: |
+          set -euo pipefail
+          BRANCH="veille/maj-$(date -u +%Y%m%d-%H%M)"
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add index.html data/veille-state.json
+          git commit -m "Veille : ${ADDED} actualité(s) ajoutée(s) (${PERIOD})"
+          git push --set-upstream origin "$BRANCH"
+
+          gh pr create \
+            --title "Veille : ${ADDED} actualité(s) à relire (${PERIOD})" \
+            --body-file .github/pr-body.md \
+            --base "${{ github.ref_name }}" \
+            --head "$BRANCH"
+
+      - name: Publier le rapport dans le résumé du job
+        if: always()
+        run: |
+          if [ -f veille-rapport.md ]; then
+            cat veille-rapport.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Aucun rapport généré." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Conserver le rapport en artefact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-veille
+          path: |
+            veille-rapport.md
+            veille-brut.json
+          if-no-files-found: ignore
+          retention-days: 30
